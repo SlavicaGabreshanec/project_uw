@@ -1,0 +1,209 @@
+<div class="d-flex topNavigationBar bgBrandColor3 fgAdditionalColor2">
+  <div class="mat-body-2 topNavigationBarItem noUserSelect">
+    Local Government Services
+  </div>
+  <div class="mat-body-2 topNavigationBarItem noUserSelect">Planning</div>
+  <div class="mat-body-2 topNavigationBarItem noUserSelect">
+    Check the Register
+  </div>
+  <div
+    class="mat-body-2 topNavigationBarItem topNavigationBarLanguageWrapper noUserSelect"
+  >
+    <span>English</span> | <span>Gaeilge</span>
+  </div>
+  <input type="text" class="topNavigationBarSearch" />
+</div>
+<div class="d-flex bottomNavigationBar bgBrandColor3 fgAdditionalColor2">
+  <img
+    class="bottonNavigationBarLogo"
+    src="../../assets/main_logo.png"
+    alt=""
+  />
+  <div class="bottonNavigationBarLeftSeparator bgAdditionalColor1"></div>
+  <div
+    class="mat-body-2 bottonNavigationBarLeft bottomNavigationBarItem noUserSelect justify-content-start"
+  >
+    Local Government Services
+  </div>
+
+  <div class="mat-body-2 bottomNavigationBarItem noUserSelect">Loremip</div>
+  <div class="mat-body-2 bottomNavigationBarItem noUserSelect">Price</div>
+  <div class="mat-body-2 bottomNavigationBarItem noUserSelect">Help</div>
+  <button
+    type="button"
+    class="smallButton bgBrandColor3 fgAdditionalColor2 bdAdditionalColor1 bottomNavigationBarButton"
+  >
+    <p class="mat-body-2">Get In Touch</p>
+  </button>
+</div>
+<div
+  class="headerIllustrationWrapper bgBrandColor3 headerIllustrationWrapperWithBgImage"
+>
+  <h1 class="mat-headline fgAdditionalColor2 text-center">
+    Local Goverment Service
+  </h1>
+  <br />
+  <div class="d-flex headerNavigationBarSearch mx-auto">
+    <input type="text" class="headerNavigationBarSearchInput" />
+    <span
+      class="mat-display-2 headerNavigationBarSearchButton bgBrandColor2 fgAdditionalColor2"
+      >Search</span
+    >
+  </div>
+</div>
+<div class="demoLayoutWrapper" [ngClass]="{ active: true }">
+  <div
+     class="sideComponent bgAdditionalColor1"
+    [ngClass]="{ active: true }" style="width: auto;"
+  >
+    <!-- Insert content here for sidebar -->
+   <side-menu></side-menu>
+  </div>
+  <div class="mainComponent">
+    <div class="contentContainer">
+      <div>
+        <!-- Insert content here for main container -->
+        <div class="textLabelNoForm">
+          <label for="labelNoForm" class="form-label mat-body-2 noMarginBottom"
+            >Your message</label
+          >
+          <input
+            type="text"
+            class="form-control textLabel inputHeight"
+            placeholder="Let us know about you..."
+            [(ngModel)]="disabledButtonDemoText"
+            name="disabledButtonDemoText"
+          />
+        </div>
+        <button
+          type="button"
+          class="normalButton bgBrandColor2 fgAdditionalColor2 m-3"
+          [attr.id]="disabledButtonDemoText === '' ? 'disabledBigButton' : ''"
+        >
+          <p class="mat-display-2">Get In Touch</p>
+        </button>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footerContainer bgBrandColor3 fgAdditionalColor2">
+  <div class="row">
+    <div class="col-sm footerRow1Left">
+      <img class="footerLogo" src="../../assets/main_logo.png" alt="" />
+      <br /><br />
+      <p class="mat-body-1">
+        Lorem Ipsum is simply dummy text of the printing and typesettidummy text
+        ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book
+      </p>
+    </div>
+    <div class="col-sm">
+      <div class="row justify-content-center">
+        <div class="col-sm">
+          <br /><br /><br />
+          <p class="mat-body-2 col-sm">Pages</p>
+          <br />
+          <p class="mat-body-2 col-sm">Lorem</p>
+          <p class="mat-body-2 col-sm">Price</p>
+          <p class="mat-body-2 col-sm">Help</p>
+          <p class="mat-body-2 col-sm">Contact</p>
+        </div>
+        <div class="col-sm">
+          <br /><br /><br />
+          <p class="mat-body-2 col-sm">Ipsum</p>
+          <br />
+          <p class="mat-body-2 col-sm">Lorem Ipsum</p>
+          <p class="mat-body-2 col-sm">Ilsum Lorem</p>
+          <p class="mat-body-2 col-sm">Lorem Lorem</p>
+        </div>
+        <div class="col-sm">
+          <br /><br /><br />
+          <p class="mat-body-2 col-sm">Lorem</p>
+          <br />
+          <p class="mat-body-2 col-sm">Documentation</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm d-flex-inline text-end">
+      <br /><br />
+      <div class="row">
+        <div class="col-sm">
+          <img
+            class="footerImagePlaceholder"
+            src="../../assets/footer_image_placeholder.png"
+            alt=""
+          />
+          <img
+            class="footerImagePlaceholder"
+            src="../../assets/footer_image_placeholder.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <img
+            class="footerImagePlaceholder"
+            src="../../assets/footer_image_placeholder.png"
+            alt=""
+          />
+          <img
+            class="footerImagePlaceholder"
+            src="../../assets/footer_image_placeholder.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <img
+            class="footerImagePlaceholder"
+            src="../../assets/footer_image_placeholder.png"
+            alt=""
+          />
+          <img
+            class="footerImagePlaceholder"
+            src="../../assets/footer_image_placeholder.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <hr />
+  <div class="row footerRow2">
+    <div class="col-sm">
+      <p class="mat-body-2">© 2021 All Rights Reserved.</p>
+    </div>
+    <div class="col-sm">
+      <p class="mat-body-2">
+        <img
+          class="footerSocialImage"
+          src="../../assets/facebook.svg"
+          alt="Facebook"
+        />
+        <img
+          class="footerSocialImage"
+          src="../../assets/twitter.svg"
+          alt="Twitter"
+        />
+        <img
+          class="footerSocialImage"
+          src="../../assets/instagram.svg"
+          alt="Instagram"
+        />
+        <img
+          class="footerSocialImage"
+          src="../../assets/youtube.svg"
+          alt="Youtube"
+        />
+      </p>
+    </div>
+    <div class="col-sm">
+      <p class="mat-body-2">Lorem Ipsum</p>
+    </div>
+  </div>
+</div>

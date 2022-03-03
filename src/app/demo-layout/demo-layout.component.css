@@ -1,0 +1,40 @@
+.demoLayoutWrapper
+{
+    display: grid;
+    width: 100%;
+    height: auto;
+    min-height: 640px;
+}
+
+.demoLayoutWrapper.active
+{
+    grid-template-columns: 0fr 2fr;
+}
+
+.demoLayoutWrapper .mainComponent
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.demoLayoutWrapper .mainComponent .contentContainer
+{
+    flex: 1 0 auto;
+}
+
+.demoLayoutWrapper .mainComponent .footerContainer
+{
+    flex-shrink: 0;
+}
+
+.demoLayoutWrapper .sideComponent
+{
+    display: none;
+    width: 180px;
+}
+
+.demoLayoutWrapper .sideComponent.active
+{
+    display: block;
+    width: 180px;
+}
