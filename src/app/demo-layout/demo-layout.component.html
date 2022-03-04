@@ -51,13 +51,12 @@
     >
   </div>
 </div>
-<div class="demoLayoutWrapper" [ngClass]="{ active: true }">
+<div class="demoLayoutWrapper" [ngClass]="{ active: isSideComponentVisible }">
   <div
      class="sideComponent bgAdditionalColor1"
-    [ngClass]="{ active: true }" style="width: auto;"
+    [ngClass]="{ active: isSideComponentVisible }" style="width: auto;"
   >
     <!-- Insert content here for sidebar -->
-   <side-menu></side-menu>
   </div>
   <div class="mainComponent">
     <div class="contentContainer">
