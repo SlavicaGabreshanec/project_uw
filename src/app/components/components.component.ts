@@ -9,6 +9,7 @@ export class ComponentsComponent implements OnInit {
 
   selectedDropdownOption = '';
   selectedSimpleNumberDropDownDemoOption = 1;
+  progress: number = 70;
 
   dropdownDemoOptions = [
     'Water',
